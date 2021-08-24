@@ -1,0 +1,75 @@
+/* .block-hero-9 .slide-1,
+.block-hero-9 .swiper-pagination span:nth-child(1) {
+  --color: #464646;
+}
+
+.block-hero-9 .slide-2,
+.block-hero-9 .swiper-pagination span:nth-child(2) {
+  --color: #606567;
+}
+
+.block-hero-9 .slide-3,
+.block-hero-9 .swiper-pagination span:nth-child(3) {
+  --color: #7d2e00;
+} */
+
+.block-hero-9 h1,
+.block-hero-9 h2,
+.block-hero-9 h3,
+.block-hero-9 h4,
+.block-hero-9 h5,
+.block-hero-9 h6,
+.block-hero-9 p {
+  font-family: Inter, serif;
+  --color: #e2841f
+  /* color: var(--color, #444); */
+}
+
+.block-hero-9 .swiper-container-horizontal>.swiper-pagination-bullets,
+.block-hero-9 .swiper-pagination-custom,
+.block-hero-9 .swiper-pagination-fraction {
+  left: auto;
+  right: 0;
+}
+
+.block-hero-9 .swiper-pagination {
+  padding: 4px 6px;
+  width: auto;
+}
+
+.block-hero-9 .swiper-pagination span:hover,
+.block-hero-9 .swiper-pagination span.swiper-pagination-bullet-active {
+  background-color: var(--color) !important;
+}
+
+.block-hero-9 .swiper-pagination span {
+  border-color: var(--color) !important;
+}
+
+.block-hero-9 {
+	background: url('../images/polinizee/slider-bg.png') right top no-repeat; 
+	background-size: auto 100%; 
+	background-color: rgb(255, 255, 255); 
+	/* margin-top: -72px; */
+}
+.block-hero-9 .button {
+  --color: #e2841f;
+}
+
+.block-hero-9 .lead {
+  font-size:  1.8rem;
+  line-height: 2.8rem;
+}
+
+.block-hero-9 #logo {
+  /* outline: solid 1px red; */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.block-hero-9 #logo img {
+  /* outline: solid 1px blue; */
+  /* width: 100%; */
+  /* height: 500px; */
+  /* height: auto; */
+}
