@@ -251,23 +251,41 @@
 	z-index: 1;
 }
 
+.slide-number {
+	opacity: 1;
+	color: #000000;
+	bottom: auto;
+	top: 140px;
+}
+.swiper-pagination {
+	padding-left: 50px;
+	text-align: left;
+}
+.swiper-pagination span:hover, 
+.swiper-pagination span.swiper-pagination-bullet-active {
+	background-color: #000000 !important;
+}
+.swiper-pagination span {
+	border: 1px solid #000000
+}
+
 /* Hero offsets */
 .hero-slide-1 .hero-figure img{
 	transform-origin: bottom right;
-	transform: scale(1.2);
+	transform: scale(1.2) translateX(25px);
 }
 .hero-slide-1 .hero-image img {
 	transform-origin: bottom right;
-	transform: scale(0.9) translateX(-150px);
+	transform: scale(0.9) translateX(-120px);
 }
 
 .hero-slide-2 .hero-figure img{
 	transform-origin: bottom right;
-	transform: scale(0.98) translateX(50px) translateY(-50px);
+	transform: scale(0.98) translateX(80px) translateY(20px);
 }
 .hero-slide-2 .hero-image img {
 	transform-origin: bottom right;
-	transform: scale(0.98) translateX(20px);
+	transform: scale(0.98) translateX(60px);
 }
 
 .hero-slide-3 .hero-figure img{

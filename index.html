@@ -126,7 +126,7 @@
     <section 
       id="slider" 
       class="slider-element slider-parallax swiper_wrapper min-vh-75 min-vh-md-100 include-header"
-      data-autoplay="5000000"
+      data-autoplay="3000"
       data-speed="1000"
       data-loop="false"
       data-effect="slide"
@@ -235,9 +235,9 @@
                     <div class="hero-heading-block">
                       <div class="hero-heading-block-symbol">
                         <img class="hero-heading-block-svg" src="images/polinizee/hero-4-title.svg" alt="">
-                        <h2 class="hero-heading-block-title">Transformação Cultural e Autonomia</h2>
+                        <h2 class="hero-heading-block-title">Transformação Cultural</h2>
                       </div>
-                      <h1 class="hero-heading-block-title back">Transformação Cultural e Autonomia</h1>
+                      <h1 class="hero-heading-block-title back">Transformação Cultural</h1>
                     </div>
                     <p class="heading-block-text">
                       Instrumentalizamos a execução lançando
@@ -259,7 +259,16 @@
             </div>
             
           </div>
-        </div>
+          
+          <!-- Numeração -->
+          <div class="slide-number">
+            <div class="slide-number-current">1</div><span>/</span>
+            <div class="slide-number-total">3</div>
+          </div>
+
+          <!-- Dots -->
+          <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+          </div>
       </div>
     </section>
 
@@ -272,12 +281,14 @@
         <div id="como-fazemos" class="page-section pt-6 mt-5">
           <div class="container">
             
+            <!-- Primeiro item -->
             <div class="row sobre-item">
               <div class="col-lg-2">
                 <img 
-                  class="sobre-icons animate__animated"
+                  class="sobre-icons first animate__animated"
                   src="images/polinizee/svg/Icone02.svg"
                   alt="Dardo no alvo" 
+                  height="100"
                   data-animate="fadeInLeft">
               </div>
               <div class="col-lg-5">
@@ -293,6 +304,7 @@
               </div>
             </div>
 
+            <!-- Segundo item -->
             <div class="row sobre-item revert-on-mobile">
               <div class="col-lg-5">
                 <div class="animate__animated" data-animate="fadeInLeft">
@@ -307,15 +319,26 @@
                 </div>
               </div>
               <div class="col-lg-2">
-                <img src="images/polinizee/svg/Icone04.svg" alt="" 
-                  class="sobre-icons animate__animated" data-animate="fadeInRight">
+                <img 
+                  src="images/polinizee/svg/Icone04.svg" 
+                  alt="icone" 
+                  height="100"
+                  class="sobre-icons second animate__animated" 
+                  data-animate="fadeInRight"
+                >
               </div>
             </div>
 
+            <!-- Terceiro item -->
             <div class="row sobre-item">
               <div class="col-lg-2">
-                <img src="images/polinizee/svg/Icone06.svg" alt="Tranformação"
-                  class="sobre-icons animate__animated" data-animate="fadeInLeft">
+                <img 
+                  src="images/polinizee/svg/Icone06.svg" 
+                  alt="Tranformação"
+                  height="100"
+                  class="sobre-icons third animate__animated" 
+                  data-animate="fadeInLeft"
+                >
               </div>
               <div class="col-lg-5">
                 <div class="animate__animated" data-animate="fadeInRight">
@@ -328,29 +351,39 @@
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="row sobre-item revert-on-mobile">
-            <div class="col-lg-5">
-              <div class="animate__animated" data-animate="fadeInLeft">
-                <h3 class="sobre-title text-right">
-                  Reavaliamos e ajustamos a rota<br>sempre que necessário
-                </h3>
-                <!-- <p class="lead text-right">
-                  Instrumentalizamos a execução lançando mão de ferramentas ágeis, acessíveis e que promovam a coesão
-                  das áreas de negócio, parceiros e fornecedores em torno da estratégia. 
-                </p> -->
+            
+            <!-- Quarto item -->
+            <div class="row sobre-item revert-on-mobile">
+              <div class="col-lg-5">
+                <div class="animate__animated" data-animate="fadeInLeft">
+                  <h3 class="sobre-title text-right">
+                    Reavaliamos e ajustamos a rota sempre que necessário
+                  </h3>
+                  <!-- <p class="lead text-right">
+                    Instrumentalizamos a execução lançando mão de ferramentas ágeis, acessíveis e que promovam a coesão
+                    das áreas de negócio, parceiros e fornecedores em torno da estratégia. 
+                  </p> -->
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <img 
+                  src="images/polinizee/svg/Icone26.svg" 
+                  height="100" 
+                  alt="" 
+                  class="sobre-icons animate__animated" 
+                  data-animate="fadeInRight"
+                >
               </div>
             </div>
-            <div class="col-lg-2">
-              <img src="images/polinizee/svg/Icone26.svg" height="200" alt="" class="sobre-icons animate__animated" data-animate="fadeInRight">
-            </div>
           </div>
 
-          <div class="mx-auto center mb-6">
-            <a href="#" class="button button-xlarge button-circle button-dark mb-5">
-              <span>Saiba mais</span>
-            </a>
+          <!-- Botão chamada -->
+          <div class="container">
+            <div class="mx-auto center mb-6">
+              <a href="#" class="button button-xlarge button-circle button-dark mb-5">
+                <span>Saiba mais</span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -387,26 +420,31 @@
             </div>
             <div class="clear"></div>
           </div>
-          <div class="mx-auto center mb-6 py-6">
-            <a 
-              href="https://api.whatsapp.com/send?phone=5511985145472&text="
-              class="button button-xlarge button-circle button-3d button-green"
-              target="_blank"
-            >
-              <i class="icon-whatsapp"></i>
-              Envie um WhastApp
-            </a>
+          <div class="container pt-6">
+            <h2 class="text-center text-uppercase fw-light font-body">
+              Fale já com um de nossos consultores
+            </h2>
+            <div class="mx-auto center">
+              <a 
+                href="https://api.whatsapp.com/send?phone=5511985145472&text="
+                class="button button-xlarge button-circle button-3d button-green"
+                target="_blank"
+              >
+                <i class="icon-whatsapp"></i>
+                Envie um WhastApp
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- Clientes -->
-        <div class="page-section mb-6 mt-6 pb-6">
+        <div class="page-section mb-6 mt-6">
           <div class="container">
             <h2 class="text-center text-uppercase fw-light ls3 font-body mb-3">
               Clientes
             </h2>
           </div>
-          <div class="col-5 mx-auto center">
+          <div class="col-8 mx-auto center">
             <!-- Clients Carousel -->
             <div 
               id="oc-clients-full"
@@ -417,6 +455,7 @@
               data-loop="true" 
               data-autoplay="5000" 
               data-items="3" 
+              data-autoWidth="true"
             >
               <div class="owl-stage-outer">
                 <div 
@@ -438,15 +477,6 @@
                   
                 </div>
               </div>
-              <!-- <div class="owl-nav">
-                <button type="button" role="presentation" class="owl-prev">
-                  <i class="icon-angle-left"></i>
-                </button>
-                <button type="button" role="presentation" class="owl-next disabled">
-                  <i class="icon-angle-right"></i>
-                </button>
-              </div>
-              <div class="owl-dots disabled"></div> -->
             </div>
           </div>
         </div>
@@ -458,94 +488,9 @@
             <h2 class="text-center text-uppercase fw-light ls3 font-body mb-6 mt-6">
               Notícias para Inspirar
             </h2>
-            <!-- <div class="row">
-              <div class="entry col-12">
-                <div class="grid-inner row g-0">
-                  <div class="col-md-4">
-                    <div class="entry-image">
-                      <img src="images/blog/full/20.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="col-md-8 ps-md-4">
-                    <div class="entry-title title-sm">
-                      <h2><a href="blog-single.html">Esse é o título da notícia</a></h2>
-                    </div>
-                    <div class="entry-meta">
-                      <ul>
-                        <li><i class="icon-calendar3"></i> 28 de abril 2021</li>
-                        <li><i class="icon-folder-open"></i> <a href="#">Categoria 1</a>, <a href="#">Subcategoria 2</a></li>
-                      </ul>
-                    </div>
-                    <div class="entry-content">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi
-                        autem blanditiis enim culpa reiciendis et explicabo tenetur voluptate rerum molestiae eaque possimus
-                        exercitationem eligendi fuga.</p>
-                      <a href="blog-single.html" class="more-link">Leia a notícia</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="entry col-12">
-                <div class="grid-inner row g-0">
-                  <div class="col-md-4">
-                    <div class="entry-image">
-                      <img src="images/blog/full/20.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="col-md-8 ps-md-4">
-                    <div class="entry-title title-sm">
-                      <h2><a href="blog-single.html">Esse é o título da notícia</a></h2>
-                    </div>
-                    <div class="entry-meta">
-                      <ul>
-                        <li><i class="icon-calendar3"></i> 28 de abril 2021</li>
-                        <li><i class="icon-folder-open"></i> <a href="#">Categoria 1</a>, <a href="#">Subcategoria 2</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="entry-content">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi
-                        nisi
-                        autem blanditiis enim culpa reiciendis et explicabo tenetur voluptate rerum molestiae eaque
-                        possimus
-                        exercitationem eligendi fuga.</p>
-                      <a href="blog-single.html" class="more-link">Leia a notícia</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="entry col-12">
-                <div class="grid-inner row g-0">
-                  <div class="col-md-4">
-                    <div class="entry-image">
-                      <img src="images/blog/full/20.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="col-md-8 ps-md-4">
-                    <div class="entry-title title-sm">
-                      <h2><a href="blog-single.html">Esse é o título da notícia</a></h2>
-                    </div>
-                    <div class="entry-meta">
-                      <ul>
-                        <li><i class="icon-calendar3"></i> 28 de abril 2021</li>
-                        <li><i class="icon-folder-open"></i> <a href="#">Categoria 1</a>, <a href="#">Subcategoria 2</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="entry-content">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi
-                        nisi
-                        autem blanditiis enim culpa reiciendis et explicabo tenetur voluptate rerum molestiae eaque
-                        possimus
-                        exercitationem eligendi fuga.</p>
-                      <a href="blog-single.html" class="more-link">Leia a notícia</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
+            
+            <!-- N0ticia 1 -->
             <div class="post-grid row col-mb-30">
-
               <div class="entry col-lg-4 col-md-6">
                 <div class="grid-inner shadow-sm card rounded-5">
                   <img src="images/blocks/preview/card-6/1-thumb.jpg" alt="Image" class="card-img-top">
@@ -557,18 +502,17 @@
                     <div class="entry-meta">
                       <ul>
                         <li><i class="icon-calendar3"></i> 21 de fevereiro de 2021</li>
-                        <li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13</a></li>
                       </ul>
                     </div>
                     <div class="entry-content mt-4">
                       <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat velit, quidem
-                        illo non harum illum! Sed omnis facilis facere, tenetur reiciendis dolor sit amet mollitia
-                        suscipit aut, nemo soluta saepe.</p>
+                        illo non harum illum! Sed omnis facilis.</p>
                     </div>
                   </div>
                 </div>
               </div>
 
+              <!-- Noticia 2 -->
               <div class="entry col-lg-4 col-md-6">
                 <div class="grid-inner shadow-sm card rounded-5">
                   <img src="images/magazine/1.jpg" alt="Image" class="card-img-top">
@@ -580,18 +524,16 @@
                     <div class="entry-meta">
                       <ul>
                         <li><i class="icon-calendar3"></i> 14 de fevereiro de 2021</li>
-                        <li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13</a></li>
                       </ul>
                     </div>
                     <div class="entry-content mt-4">
-                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat velit, quidem
-                        illo non harum illum! Sed omnis facilis facere, tenetur reiciendis dolor sit amet mollitia
-                        suscipit aut, nemo soluta saepe.</p>
+                      <p class="mb-0">Sint aute do non occaecat nostrud amet veniam qui excepteur duis sint tempor aute eiusmod. Proident labore Lorem in velit cupidatat .</p>
                     </div>
                   </div>
                 </div>
               </div>
 
+              <!-- Noticia 3 -->
               <div class="entry col-lg-4 col-md-6">
                 <div class="grid-inner shadow-sm card rounded-5">
                   <img src="images/magazine/3.jpg" alt="Image" class="card-img-top">
@@ -603,13 +545,11 @@
                     <div class="entry-meta">
                       <ul>
                         <li><i class="icon-calendar3"></i> 10 de fevereiro de 2021</li>
-                        <li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13</a></li>
                       </ul>
                     </div>
                     <div class="entry-content mt-4">
                       <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat velit, quidem
-                        illo non harum illum! Sed omnis facilis facere, tenetur reiciendis dolor sit amet mollitia
-                        suscipit aut, nemo soluta saepe.</p>
+                        illo non harum illum!</p>
                     </div>
                   </div>
                 </div>
@@ -712,9 +652,10 @@
   <!-- Footer Scripts
 	============================================= -->
   <script src="js/functions.js"></script>
+  
+  
   <!-- START Widget WhastApp  -->
-
-  <!-- <a href="https://api.whatsapp.com/send?phone=5511985145472&text=" class="bt-whatsApp" target="_blank"
+  <a href="https://api.whatsapp.com/send?phone=5511985145472&text=" class="bt-whatsApp" target="_blank"
     style="right:25px; position:fixed;width:60px;height:60px;bottom:40px;z-index:100;">
     <img
       src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMjYxOSA1MDYgMTIwIDEyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogIzI3ZDA0NTsKICAgICAgfQoKICAgICAgLmNscy0yLCAuY2xzLTUgewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgc3Ryb2tlOiAjZmZmOwogICAgICAgIHN0cm9rZS13aWR0aDogNXB4OwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgc3Ryb2tlOiBub25lOwogICAgICB9CiAgICA8L3N0eWxlPjwvZGVmcz48ZyBkYXRhLW5hbWU9Ikdyb3VwIDM2IiBpZD0iR3JvdXBfMzYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIzMDAgNzMpIj48Y2lyY2xlIGNsYXNzPSJjbHMtMSIgY3g9IjYwIiBjeT0iNjAiIGRhdGEtbmFtZT0iRWxsaXBzZSAxOCIgaWQ9IkVsbGlwc2VfMTgiIHI9IjYwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMTkgNDMzKSIvPjxnIGRhdGEtbmFtZT0iR3JvdXAgMzUiIGlkPSJHcm91cF8zNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjU0IDM4NikiPjxnIGRhdGEtbmFtZT0iR3JvdXAgMzQiIGlkPSJHcm91cF8zNCI+PGcgY2xhc3M9ImNscy0yIiBkYXRhLW5hbWU9IkVsbGlwc2UgMTkiIGlkPSJFbGxpcHNlXzE5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NCA3NSkiPjxjaXJjbGUgY2xhc3M9ImNscy00IiBjeD0iMzEuNSIgY3k9IjMxLjUiIHI9IjMxLjUiLz48Y2lyY2xlIGNsYXNzPSJjbHMtNSIgY3g9IjMxLjUiIGN5PSIzMS41IiByPSIyOSIvPjwvZz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xNDI0LDE5MWwtNC42LDE2LjMsMTYuOS00LjcuOS01LjItMTEsMy41LDIuOS0xMC41WiIgZGF0YS1uYW1lPSJQYXRoIDEyNiIgaWQ9IlBhdGhfMTI2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTMyNSAtNjgpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTI2Niw5MGMwLS4xLDMuNS0xMS43LDMuNS0xMS43bDguNCw3LjlaIiBkYXRhLW5hbWU9IlBhdGggMTI3IiBpZD0iUGF0aF8xMjciIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMTY1IDQzKSIvPjwvZz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xNDM5LjMsMTYwLjZhOS40LDkuNCwwLDAsMC0zLjksNi4xYy0uNSwzLjksMS45LDcuOSwxLjksNy45YTUwLjg3Niw1MC44NzYsMCwwLDAsOC42LDkuOCwzMC4xODEsMzAuMTgxLDAsMCwwLDkuNiw1LjEsMTEuMzc4LDExLjM3OCwwLDAsMCw2LjQuNiw5LjE2Nyw5LjE2NywwLDAsMCw0LjgtMy4yLDkuODUxLDkuODUxLDAsMCwwLC42LTIuMiw1Ljg2OCw1Ljg2OCwwLDAsMCwwLTJjLS4xLS43LTcuMy00LTgtMy44cy0xLjMsMS41LTIuMSwyLjYtMS4xLDEuNi0xLjksMS42LTQuMy0xLjQtNy42LTQuNGExNS44NzUsMTUuODc1LDAsMCwxLTQuMy02cy42LS43LDEuNC0xLjhhNS42NjQsNS42NjQsMCwwLDAsMS4zLTIuNGMwLS41LTIuOC03LjYtMy41LTcuOUExMS44NTIsMTEuODUyLDAsMCwwLDE0MzkuMywxNjAuNloiIGRhdGEtbmFtZT0iUGF0aCAxMjgiIGlkPSJQYXRoXzEyOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzMjYuMzMyIC02OC40NjcpIi8+PC9nPjwvZz48L3N2Zz4="
@@ -747,7 +688,7 @@
     msg1.onclick = function () {
       document.getElementById('msg1').style.visibility = "hidden";
     };
-  </script> -->
+  </script>
   <!-- END Widget WhastApp -->
 </body>
 
