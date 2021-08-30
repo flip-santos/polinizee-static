@@ -9,8 +9,8 @@
 	5. Como fazemos
 	6. Box Banner
 	7. Footer
-	8. Carousel Como fazemos
-	9. Extra adjusts
+	8. Infografico Como fazemos
+	9. Infografico Area de atuação
 -----------------------------------------------------------------*/
 
 
@@ -711,7 +711,7 @@
 
 
 /* ==============
- 8. Carousel Como fazemos
+ 8. Infografico Como fazemos
 ================= */
 #info-como-fazemos {
 	padding: 200px 0 0;
@@ -804,5 +804,106 @@
 }
 
 /* ==============
- 9. Extra adjusts
+ 9. Infografico Area de atuação
 ================= */
+.area-atuacao {
+	position: relative;
+}
+
+.area-atuacao-info {
+	position: relative;
+	height: 100vh;
+}
+
+.area-atuacao-info img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 450px;
+}
+
+.info-figures {}
+
+.info-lines {}
+
+.area-atuacao-content {
+}
+
+.info-block {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 250px;
+}
+.info-block h3 {
+	font-size: 1.5rem !important;
+	line-height: 1.7rem !important;
+	margin: 0;
+}
+.info-block p {
+	font-size: 1rem !important;
+	line-height: 1.2rem !important;
+}
+
+.block-1 {
+	transform: translate(300px, -225px);
+}
+.block-2 {
+	transform: translate(300px, -50px);
+}
+.block-3 {
+	transform: translate(300px, 130px);
+}
+.block-4 {
+	text-align: right;
+	transform: translate(-550px, 150px);
+}
+.block-5 {
+	text-align: right;
+	transform: translate(-550px, -75px);
+}
+.block-6 {
+	text-align: right;
+	transform: translate(-550px, -270px);
+}
+
+/* Extra small devices < 576px (large phones, portrait small phones) */
+@media (max-width: 575.98px) {
+	#info-area-atuacao .oc-item img{
+		height: 200px !important;
+	}
+	#info-area-atuacao .oc-extra-content h3 {
+		margin: 40px 0 20px;
+		font-size: 1.8rem !important;
+	}
+	#info-area-atuacao .oc-extra-content p {
+		font-size: 1.2rem !important;
+		line-height: 1.5rem !important;
+		padding: 0 40px !important;
+	}
+}
+
+
+/* Small devices < 769px (landscape phones, portrait small tablets) */
+@media (max-width: 769px) {
+	#info-area-atuacao .oc-item img{
+		height: 300px;
+	}
+	#info-area-atuacao .oc-extra-content{
+		text-align: center;
+	}
+	#info-area-atuacao .oc-extra-content h3 {
+		margin: 40px 0 20px;
+		font-size: 2.2rem;
+	}
+	#info-area-atuacao .oc-extra-content p {
+		font-size: 1.5rem;
+		line-height: 1.7rem;
+		padding: 0 20vw;
+	}
+}
+ 
+
+ 
