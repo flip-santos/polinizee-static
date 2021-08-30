@@ -5,4 +5,3 @@ function clientItems(){
   document.getElementById('oc-clients-full').dataset.items = oc_items;
 }
 clientItems();
-document.addEventListener('resize', clientItems);
