@@ -224,10 +224,10 @@
 .heading-block-text {
 	position: relative;	
 	z-index: 2;
-	width: 480px;
+	width: 40vw;
 	font-family: 'GeosansLight';
-	font-size: 2.4rem;
-	line-height: 2.4rem;
+	font-size: 1.8rem;
+	line-height: 1.8rem;
 	font-weight: bold;
 	transform: translateX(60px);
 	margin-top: 40px;
@@ -281,7 +281,7 @@
 }
 .hero-slide-1 .hero-image img {
 	transform-origin: bottom right;
-	transform: scale(0.9) translateX(-120px);
+	transform: scale(0.85) translateX(-80px) translateY(-60px);
 }
 
 .hero-slide-2 .hero-figure img{
@@ -313,7 +313,14 @@
 
 /* Extra small devices < 576px (large phones, portrait small phones) */
 @media (max-width: 575.98px) {
-	#slider .heading-block-title {
+	#slider .swiper-slide {
+		padding-top: 0;
+	}
+	/* #slider .hero-heading-block {
+		height: initial !important;
+	} */
+	#slider .heading-block-title.back {
+		/* position: unset !important; */
 		font-size: 2rem;
 		line-height: 2.5rem;
 	}
@@ -321,8 +328,50 @@
 		font-size: 1rem;
 	}
 	#slider .heading-block-text {
+		/* position: unset !important; */
 		font-size: 1rem;
 		line-height: 1.4rem;
+		margin-top: 0;
+	}
+	
+	/* Slide 1 */
+	#slider .hero-slide-1 .heading-block-text {
+		top: 0;
+	}
+	
+	/* Slide 2 */
+	.hero-slide-2 .heading-block-text {
+		top: 200px !important;
+	}
+	.hero-slide-2 .hero-figure img{
+		transform: scale(.7) translate(50px, 50px) !important;
+	}
+	
+	/* Slide 3 */
+	#slider .hero-slide-3 .heading-block-text {
+		top: 150px !important;
+	}
+	
+	/* Slide 4 */
+	.hero-slide-4 .heading-block-text {
+		outline: solid 1px red;
+		
+		top: 150px !important;
+	}
+	.hero-slide-4 .hero-figure {
+		/* top: initial !important;
+		left: initial !important;
+		bottom: 0 !important;
+		right: 0 !important; */
+	}
+	#slider .hero-slide-4 .hero-figure img{
+		transform: scale(.5) translate(30px, 0) !important;
+		/* transform-origin: bottom left; */
+		/* transform: scale(.7) translate(30px, 0) !important; */
+	}
+	.hero-slide-4 .hero-image img {
+		/* transform-origin: bottom right; */
+		/* transform: scale(.75) translate(-85px, 0) ; */
 	}
 }
  
@@ -350,21 +399,24 @@
 		transform: translate(0, 0);
 	}
 	.hero-heading-block-title::first-letter {
-		font-size: 5rem !important;
+		font-size: 4rem !important;
 		line-height: 2rem !important;
 	}
 	.hero-heading-block-title.back {
 		text-align: right;
 		transform:translateX(-40px);
 		line-height: 3.8rem;
+		/* top: 0; */
 	}	
 	.heading-block-text {
+		/* outline: solid 1px red; */
+		
 		position: absolute;
-		top: 140px;
+		top: 80px;
 		width: 90vw;
 		min-width: 90vw;
-		font-size: 1.8rem !important;
-		line-height: 2rem !important;
+		font-size: 1.4rem !important;
+		line-height: 1.6rem !important;
 		text-align: center;
 	}
 	.hero-feature {
@@ -422,7 +474,7 @@
 		transform: translateX(-50%);
 	}
 	.hero-slide-3 .heading-block-text {
-		top: 100px !important;
+		top: 100px ;
 	}
 	.hero-slide-3 .hero-figure img{
 		transform-origin: top left !important;
@@ -710,8 +762,6 @@
 	overflow-x: scroll;
 }
 .info-como-fazemos .info-item {
-	/* outline: solid 1px red; */
-	
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -721,10 +771,10 @@
 }
 .info-como-fazemos .info-center-title {
 	font-family: 'ChunkFive', sans-serif;
-	font-size: .9rem;
+	font-size: .8rem;
 	line-height: .9rem;
 	margin: 0 0 10px;
-	letter-spacing: 1px;
+	letter-spacing: .12px;
 	text-align: center;
 	position: absolute;
 	top: 50%;
@@ -735,9 +785,9 @@
 	position: absolute;
 }
 .info-como-fazemos .info-extra-content h3 {
-	font-family: 'ChunkFive', sans-serif;
-	font-size: 1.2rem;
-	line-height: 1.4rem;
+	font-weight: bold;
+	font-size: 1.1rem;
+	line-height: 1.3rem;
 	margin: 0 0 10px;
 	letter-spacing: 1px;
 }
