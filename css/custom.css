@@ -9,7 +9,8 @@
 	5. Como fazemos
 	6. Box Banner
 	7. Footer
-	8. Extra adjusts
+	8. Carousel Como fazemos
+	9. Extra adjusts
 -----------------------------------------------------------------*/
 
 
@@ -75,22 +76,26 @@
 .text-right {
 	text-align: right;
 }
+.mobile-only {
+	display: none;
+}
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 769px) {
 	.revert-on-mobile {
 		flex-direction: column-reverse;
 	}
-}
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+	.mobile-only {
+		display: block;
+	}
+	.hide-on-mobile {
+		display: none !important;
+	}
 	.mobile-h-75 {
 		height: 75vh;
 	}
 }
-
-
 
 
 
@@ -219,7 +224,7 @@
 .heading-block-text {
 	position: relative;	
 	z-index: 2;
-	width: 600px;
+	width: 480px;
 	font-family: 'GeosansLight';
 	font-size: 2.4rem;
 	line-height: 2.4rem;
@@ -323,6 +328,9 @@
  
 /* Small devices < 768px (landscape phones, portrait small tablets) */
 @media (max-width: 767.98px) {
+	.slide-number {
+		display: none;
+	}
 	.slider-element {
 		height: calc(100vh - 50px);
 	}
@@ -353,10 +361,11 @@
 	.heading-block-text {
 		position: absolute;
 		top: 140px;
-		width: 75%;
+		width: 90vw;
+		min-width: 90vw;
 		font-size: 1.8rem !important;
 		line-height: 2rem !important;
-		text-align: right;
+		text-align: center;
 	}
 	.hero-feature {
 		top: 0;
@@ -379,7 +388,7 @@
 	}
 	.hero-slide-1 .hero-figure img{
 		transform-origin: top left;
-		transform: scale(3) translate(25px, 100px); 
+		transform: scale(4) translate(-10px, 90px) !important; 
 		top: 0;
 	}
 	.hero-slide-1 .hero-image img {
@@ -416,8 +425,8 @@
 		top: 100px !important;
 	}
 	.hero-slide-3 .hero-figure img{
-		transform-origin: top left;
-		transform: scale(2.5) translate(-30px, 90px);
+		transform-origin: top left !important;
+		transform: scale(2.5) translate(10px, 130px) !important;
 	}
 	.hero-slide-3 .hero-image img {
 		transform-origin: bottom left;
@@ -436,18 +445,13 @@
 	}
 	.hero-slide-4 .hero-figure img{
 		transform-origin: bottom left;
-		transform: scale(.7) translate(-150px, 0);
+		transform: scale(.7) translate(30px, 0) !important;
 	}
 	.hero-slide-4 .hero-image img {
 		transform-origin: bottom right;
 		transform: scale(.75) translate(-85px, 0) ;
 	}
 
-}
- 
-/* Medium devices < 992px (small tablets, portrait large phones) */
-@media (max-width: 991.98px) {
-	
 }
  
 /* Large devices < 1200px (large tablets, desktops, small notebooks) */
@@ -507,7 +511,7 @@
 .sobre-item {
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 1.5rem;
+	margin-bottom: 3rem;
 }
 .sobre-item .lead {
 	font-size: 1.5rem !important;
@@ -516,8 +520,8 @@
 .sobre-title {
 	margin-bottom: 0.5rem;
 	font-family: 'GeosansLight';
-	font-size: 2.5rem !important;
-	line-height: 2.5rem !important;
+	font-size: 2.3rem !important;
+	line-height: 2.3rem !important;
 	color: #000;
 	font-weight: bold;
 	letter-spacing: 1px;
@@ -531,12 +535,26 @@
 	}
 	#como-fazemos .sobre-title {
 		padding-left: 100px;
+		text-align: center !important;
 	}
 	#como-fazemos .lead {
 		font-size: 1rem;
 		line-height: 1.5rem;
+		text-align: center !important;
 	}	
 }
+
+/* Medium devices < 992px (small tablets, portrait large phones) */
+@media (max-width: 991.98px) {
+	#como-fazemos .sobre-title {
+		text-align: center !important;
+	}
+	#como-fazemos .lead {
+		text-align: center !important;
+	}	
+}
+ 
+
  
 /* Large devices < 1200px (large tablets, desktops, small notebooks) */
 @media (max-width: 1199.98px) {
@@ -620,17 +638,121 @@
 }	
 .social-buttons  {
 	margin-top: 40px;
-	padding-left: 30px;
+	padding-left: 60px;
 }	
 .social-buttons .social-icon {
 	margin-left: 10px;
 	margin-right: 10px;
 }	
 
+/* Small devices < 768px (landscape phones, portrait small tablets) */
+@media (max-width: 769px) {
+	.social-buttons {
+		margin-bottom: 20px !important;
+	}
+}
+
+
+ 
 
 
 
 
 /* ==============
- 8. Extra adjusts
+ 8. Carousel Como fazemos
+================= */
+#info-como-fazemos {
+	padding: 200px 0 0;
+}
+#info-como-fazemos .owl-stage-outer {
+	overflow: visible !important;
+}
+#info-como-fazemos .oc-item img{
+	height: 400px !important;
+}
+#info-como-fazemos .oc-item {
+	position: relative;
+}
+#info-como-fazemos .oc-center-title {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	transform: translateY(calc(-50% - 40px));
+	text-align: center;
+	font-family: 'ChunkFive', sans-serif;
+	font-size: .9rem;
+	line-height: 1.2rem;
+}
+#info-como-fazemos .oc-extra-content {
+	position: absolute;
+	padding: 0 15vw;
+	top: -130px;
+}
+#info-como-fazemos .oc-extra-content h3 {
+	font-family: 'ChunkFive', sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	margin: 0 0 10px;
+	letter-spacing: 1px;
+}
+#info-como-fazemos .oc-extra-content p {
+	font-size: 1rem;
+	line-height: 1.2rem;
+	margin: 0;
+}
+
+/* Desktop */
+.info-como-fazemos {}
+
+.info-como-fazemos .info-area {
+	display: flex;
+	justify-content: center;
+	overflow-x: scroll;
+}
+.info-como-fazemos .info-item {
+	/* outline: solid 1px red; */
+	
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 250px;
+	height: 600px;
+}
+.info-como-fazemos .info-center-title {
+	font-family: 'ChunkFive', sans-serif;
+	font-size: .9rem;
+	line-height: .9rem;
+	margin: 0 0 10px;
+	letter-spacing: 1px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-30px);
+}
+.info-como-fazemos .info-extra-content {
+	position: absolute;
+}
+.info-como-fazemos .info-extra-content h3 {
+	font-family: 'ChunkFive', sans-serif;
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	margin: 0 0 10px;
+	letter-spacing: 1px;
+}
+.info-como-fazemos .info-extra-content p {
+	font-size: 1rem;
+	line-height: 1rem !important;
+	margin-bottom: 0;
+}
+.info-como-fazemos .top {
+	top: 0;
+}
+.info-como-fazemos .bottom {
+	bottom: 0;
+}
+
+/* ==============
+ 9. Extra adjusts
 ================= */
