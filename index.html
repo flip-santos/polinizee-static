@@ -8,9 +8,6 @@
 
   <!-- Stylesheets
 	============================================= -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap"
-    rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
   <link rel="stylesheet" href="style.css" type="text/css" />
   <link rel="stylesheet" href="css/swiper.css" type="text/css" />
@@ -25,6 +22,24 @@
   <!-- Document Title
 	============================================= -->
   <title>Polinizee</title>
+  
+  <!-- Font loader -->
+  <script type="text/javascript">
+    WebFontConfig = {
+      google: {
+        families: ['ChunkFive::latin', 'GeosansLight::latin']
+      }
+    };
+    (function () {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
 
 </head>
 
@@ -396,7 +411,7 @@
             
             <!-- Primeiro item -->
             <div class="row sobre-item">
-              <div class="col-lg-2 text-center">
+              <div class="col-lg-2 text-lg-center">
                 <img 
                   class="sobre-icons first animate__animated"
                   src="images/polinizee/svg/Icone02.svg"
@@ -421,7 +436,7 @@
             <div class="row sobre-item revert-on-mobile">
               <div class="col-lg-6">
                 <div class="animate__animated" data-animate="fadeInLeft">
-                  <h3 class="sobre-title text-right">
+                  <h3 class="sobre-title text-lg-right">
                     Otimizamos o dia a dia da empresa,
                     potencializando o crescimento
                   </h3>
@@ -431,7 +446,7 @@
                   </p> -->
                 </div>
               </div>
-              <div class="col-lg-2 text-center">
+              <div class="col-lg-2 text-lg-center">
                 <img 
                   src="images/polinizee/svg/Icone04.svg" 
                   alt="icone" 
@@ -444,7 +459,7 @@
 
             <!-- Terceiro item -->
             <div class="row sobre-item">
-              <div class="col-lg-2 text-center">
+              <div class="col-lg-2 text-lg-center">
                 <img 
                   src="images/polinizee/svg/Icone06.svg" 
                   alt="Tranformação"
@@ -469,7 +484,7 @@
             <div class="row sobre-item revert-on-mobile">
               <div class="col-lg-6">
                 <div class="animate__animated" data-animate="fadeInLeft">
-                  <h3 class="sobre-title text-right">
+                  <h3 class="sobre-title text-lg-right">
                     Reavaliamos e ajustamos a rota sempre que necessário
                   </h3>
                   <!-- <p class="lead text-right">
@@ -478,7 +493,7 @@
                   </p> -->
                 </div>
               </div>
-              <div class="col-lg-2 text-center">
+              <div class="col-lg-2 text-lg-center">
                 <img 
                   src="images/polinizee/svg/Icone26.svg" 
                   height="120" 
@@ -567,7 +582,6 @@
               data-pagi="false"
               data-loop="true" 
               data-autoplay="5000" 
-              data-items="3" 
               data-autoWidth="true"
             >
               <div class="owl-stage-outer">
@@ -576,15 +590,15 @@
                   style="transform: translate3d(-1039px, 0px, 0px); transition: all 0.25s ease 0s; width: 2495px;"
                 >
                   
-                  <div class="owl-item" style="width: 177.857px; margin-right: 30px;">
+                  <div class="owl-item">
                     <div class="oc-item"><a href="#"><img src="images/polinizee/cliente-mariana-junqueira.png" alt="Brands"></a></div>
                   </div>
                   
-                  <div class="owl-item" style="width: 177.857px; margin-right: 30px;">
+                  <div class="owl-item">
                     <div class="oc-item"><a href="#"><img src="images/polinizee/cliente-zero-barreiras.png" alt="Brands"></a></div>
                   </div>
     
-                  <div class="owl-item" style="width: 177.857px; margin-right: 30px;">
+                  <div class="owl-item">
                     <div class="oc-item"><a href="#"><img src="images/polinizee/cliente-general-wings.png" alt="Brands"></a></div>
                   </div>
                   
@@ -1085,6 +1099,7 @@
   <!-- Footer Scripts
 	============================================= -->
   <script src="js/functions.js"></script>
+  <script src="js/custom.js"></script>
   
   
   <!-- START Widget WhastApp  -->

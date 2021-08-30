@@ -11,6 +11,7 @@
 	7. Footer
 	8. Infografico Como fazemos
 	9. Infografico Area de atuação
+	10. Clientes carousel
 -----------------------------------------------------------------*/
 
 
@@ -36,9 +37,17 @@
 	font-style: normal;
 	font-display: swap;
 }
+html,body,h1,h2,h3,h4,h5,h6,p,a {
+	font-family: sans-serif;
+}
 
-
-
+.wf-loading * {
+	opacity: 0;
+}
+.wf-active *, 
+.wf-inactive * {
+	transition: opacity 1s ease-out;  
+}
 
 
 /* ==========
@@ -316,11 +325,7 @@
 	#slider .swiper-slide {
 		padding-top: 0;
 	}
-	/* #slider .hero-heading-block {
-		height: initial !important;
-	} */
 	#slider .heading-block-title.back {
-		/* position: unset !important; */
 		font-size: 2rem;
 		line-height: 2.5rem;
 	}
@@ -328,7 +333,6 @@
 		font-size: 1rem;
 	}
 	#slider .heading-block-text {
-		/* position: unset !important; */
 		font-size: 1rem;
 		line-height: 1.4rem;
 		margin-top: 0;
@@ -336,7 +340,7 @@
 	
 	/* Slide 1 */
 	#slider .hero-slide-1 .heading-block-text {
-		top: 0;
+		top: 130px;
 	}
 	
 	/* Slide 2 */
@@ -354,29 +358,19 @@
 	
 	/* Slide 4 */
 	.hero-slide-4 .heading-block-text {
-		outline: solid 1px red;
-		
 		top: 150px !important;
 	}
 	.hero-slide-4 .hero-figure {
-		/* top: initial !important;
-		left: initial !important;
-		bottom: 0 !important;
-		right: 0 !important; */
 	}
 	#slider .hero-slide-4 .hero-figure img{
 		transform: scale(.5) translate(30px, 0) !important;
-		/* transform-origin: bottom left; */
-		/* transform: scale(.7) translate(30px, 0) !important; */
 	}
 	.hero-slide-4 .hero-image img {
-		/* transform-origin: bottom right; */
-		/* transform: scale(.75) translate(-85px, 0) ; */
 	}
 }
  
 /* Small devices < 768px (landscape phones, portrait small tablets) */
-@media (max-width: 767.98px) {
+@media (max-width: 769px) {
 	.slide-number {
 		display: none;
 	}
@@ -406,11 +400,8 @@
 		text-align: right;
 		transform:translateX(-40px);
 		line-height: 3.8rem;
-		/* top: 0; */
 	}	
 	.heading-block-text {
-		/* outline: solid 1px red; */
-		
 		position: absolute;
 		top: 80px;
 		width: 90vw;
@@ -904,6 +895,18 @@
 		padding: 0 20vw;
 	}
 }
- 
 
+
+
+/* ==============
+10. Clientes
+================= */
+/* Small devices < 768px (landscape phones, portrait small tablets) */
+@media (max-width: 767.98px) {
+	#oc-clients-full .oc-item img {
+		/* height: 150px !important; */
+		/* width: auto !important; */
+	}
+	
+}
  
